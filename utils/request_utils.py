@@ -3,9 +3,9 @@ from requests.auth import HTTPBasicAuth
 from utils import files_utils
 import json
 
-username = 'hcc-rag'
-password = '45355$%Dff'
-base_url = 'http://10.26.9.148:31817'
+username = your_username
+password = your_password
+base_url = 'http://ip:port'
 
 
 def create_kb(filepaths,index_name,max_length,overlap_length,segment_id):
@@ -25,7 +25,7 @@ def create_kb(filepaths,index_name,max_length,overlap_length,segment_id):
       "chunking_strategy":{"chunk_type":1,"max_tokens":max_length,"overlap":overlap_length,"separator":segment_id}
     }
     
-    response = requests.post(url, auth=HTTPBasicAuth('hcc-rag', '45355$%Dff'), data=json.dumps(data))
+    response = requests.post(url, auth=HTTPBasicAuth(username, password), data=json.dumps(data))
 
     return response
 
