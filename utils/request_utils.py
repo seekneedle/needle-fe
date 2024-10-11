@@ -2,10 +2,11 @@ import requests
 from requests.auth import HTTPBasicAuth
 from utils import files_utils
 import json
+from config import config
 
-username = your_username
-password = your_password
-base_url = 'http://ip:port'
+username = config['username']
+password = config['password']
+base_url = config['ip'] + ":" + config['port']
 
 
 def create_kb(filepaths,index_name,max_length,overlap_length,segment_id):
