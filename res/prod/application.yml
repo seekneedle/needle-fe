@@ -6,7 +6,7 @@ password: your_password
 
 
 #ES
-es_hosts : "http://10.25.2.105:9233"
+es_hosts : "ip:port"
 
 #filestore 
 filestore_root_dir : "res/knowledge"
