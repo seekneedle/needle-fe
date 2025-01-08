@@ -1,8 +1,8 @@
-ip: 0.0.0.0
-port: 8471
+ip: 8.152.213.191
+port: 8475
 log_level: info
 username: needle
-password:
+password: 0f8a40edee84c1f737c8ac3f29291f17aefe41bc59a6bc5811f4ed78425c1868
 
 #filestore 
 filestore_root_dir : "output"
