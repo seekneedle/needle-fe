@@ -1,10 +1,13 @@
 ip: 8.152.213.191
-port: 8471
-log_level: debug
+port: 8475
+log_level: info
 username: needle
 password: 0f8a40edee84c1f737c8ac3f29291f17aefe41bc59a6bc5811f4ed78425c1868
 
-#filestore 
+auth_username: needle-fe
+auth_password: 8abea1093957e3d0edbb0c1ec0a2d40f9c6bde4765b0bac84bacd4d2c27e12d0
+
+#filestore
 filestore_root_dir : "output"
 
-env_pwd: needle_fe
+env_pwd: needle_fe_uat
