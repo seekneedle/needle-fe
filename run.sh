@@ -1,1 +1,1 @@
-streamlit run webui.py
+nohup ENV=prod streamlit run webui.py --server.port 8481 &
