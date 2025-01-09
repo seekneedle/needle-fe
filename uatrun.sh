@@ -1,1 +1,1 @@
-nohup ENV=uat streamlit run webui.py --server.port 8485 &
+ENV=uat nohup streamlit run webui.py --server.port 8485 &
