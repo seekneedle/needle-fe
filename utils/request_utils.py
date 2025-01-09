@@ -31,14 +31,14 @@ def create_kb(uploaded_files,index_name,max_length,overlap_length,segment_id):
     counter = 0
 
     while counter < 50:
+        time.sleep(6)
+
         status_response = requests.get(status_url, auth=HTTPBasicAuth(username, password))
 
         status_data = status_response.json()['data']
 
         if status_data['status'] == 'COMPLETED' or status_data['status'] == 'FAILED':
             return status_response
-
-        time.sleep(6)
 
     return response
 
@@ -63,14 +63,14 @@ def upload_files(uploaded_files,index_id,max_length,overlap_length,segment_id):
     counter = 0
 
     while counter < 50:
+        time.sleep(6)
+
         status_response = requests.get(status_url, auth=HTTPBasicAuth(username, password))
 
         status_data = status_response.json()['data']
 
         if status_data['status'] == 'COMPLETED' or status_data['status'] == 'FAILED':
             return status_response
-
-        time.sleep(6)
 
     return response
 
