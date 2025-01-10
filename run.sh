@@ -1,1 +1,1 @@
-ENV=prod nohup streamlit run webui.py --server.port 8481 &
+ENV=prod nohup streamlit run webui.py --server.baseUrlPath=/prod --server.port 8485 &
