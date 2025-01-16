@@ -1,1 +1,1 @@
-ENV=uat nohup streamlit run webui.py --server.baseUrlPath=/uat --server.port 8485 &
+ENV=uat nohup streamlit run webui.py --server.baseUrlPath=/uat --server.port 8485 >output/run.log 2>&1 &
